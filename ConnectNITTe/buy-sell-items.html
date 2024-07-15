@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy/Sell Items - ConnectNITTe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            padding: 40px;
+        }
+
+        .card {
+            margin: 20px 0;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .form-control {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">ConnectNITTe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="buy-sell-items.html">Buy/Sell Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">Buy/Sell Items</h1>
+        <p class="text-center">Trade items within the NITTe community</p>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">List of Items</h5>
+                <ul class="list-group" id="itemList">
+                    <!-- Sample items -->
+                    <li class="list-group-item">
+                        <strong>Item:</strong> Laptop
+                        <p><strong>Type:</strong> Electronics</p>
+                        <p><strong>Price:</strong> ₹30,000</p>
+                        <p><strong>Contact:</strong> 1234567890</p>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Item:</strong> Bicycle
+                        <p><strong>Type:</strong> Vehicle</p>
+                        <p><strong>Price:</strong> ₹5,000</p>
+                        <p><strong>Contact:</strong> 9876543210</p>
+                    </li>
+                    <!-- More items will be added here -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Post an Item</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="itemName">Item Name</label>
+                        <input type="text" class="form-control" id="itemName" placeholder="Enter item name">
+                    </div>
+                    <div class="form-group">
+                        <label for="itemType">Item Type</label>
+                        <input type="text" class="form-control" id="itemType" placeholder="Enter item type">
+                    </div>
+                    <div class="form-group">
+                        <label for="itemPrice">Item Price</label>
+                        <input type="text" class="form-control" id="itemPrice" placeholder="Enter item price">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactInfo">Contact Information</label>
+                        <input type="text" class="form-control" id="contactInfo" placeholder="Enter contact information">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Post Item</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

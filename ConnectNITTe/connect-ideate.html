@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect & Ideate - ConnectNITTe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            padding: 40px;
+        }
+
+        .card {
+            margin: 20px 0;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .form-control {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="main.html">ConnectNITTe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html">Home</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="connect-ideate.html">Connect & Ideate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">Connect & Ideate</h1>
+        <p class="text-center">Connect with peers and ideate on innovative projects</p>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Active Projects</h5>
+                <ul class="list-group" id="projectList">
+                    <!-- Sample projects -->
+                    <li class="list-group-item">
+                        <strong>Project Name:</strong> Campus Sustainability Initiative
+                        <p><strong>Team Members:</strong> John Doe, Jane Smith</p>
+                        <p><strong>Description:</strong> A project aimed at reducing campus carbon footprint</p>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Project Name:</strong> Student Mental Health App
+                        <p><strong>Team Members:</strong> Alex Johnson, Emily Brown</p>
+                        <p><strong>Description:</strong> Developing an app to support student mental health</p>
+                    </li>
+                    <!-- More projects will be added here -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Start a New Project</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="projectName">Project Name</label>
+                        <input type="text" class="form-control" id="projectName" placeholder="Enter project name">
+                    </div>
+                    <div class="form-group">
+                        <label for="teamMembers">Team Members</label>
+                        <input type="text" class="form-control" id="teamMembers"
+                            placeholder="Enter team members (separated by commas)">
+                    </div>
+                    <div class="form-group">
+                        <label for="projectDescription">Project Description</label>
+                        <textarea class="form-control" id="projectDescription"
+                            placeholder="Enter project description"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Start Project</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
