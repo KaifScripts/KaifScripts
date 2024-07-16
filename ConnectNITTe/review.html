@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - ConnectNITTe</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #0ca094;
+        }
+
+        .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .card {
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: #0ca094;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: #087e6d;
+        }
+
+        .form-control {
+            border-radius: 15px;
+        }
+
+        .list-group-item {
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        footer {
+            background-color: #0ca094;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">ConnectNITTe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login/Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="review.html">Reviews</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h2 class="text-center">Reviews</h2>
+        <div class="list-group">
+            <!-- Example Review -->
+            <div class="list-group-item">
+                <h5>John Doe</h5>
+                <p>Great platform! Easy to use and found a cycle to rent quickly.</p>
+                <small class="text-muted">Rating: ★★★★☆</small>
+            </div>
+            <!-- Add more reviews as needed -->
+        </div>
+        <div class="mt-5">
+            <h3 class="text-center">Submit a Review</h3>
+            <form id="review-form">
+                <div class="form-group">
+                    <label for="review-name">Your Name</label>
+                    <input type="text" class="form-control" id="review-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="review-text">Your Review</label>
+                    <textarea class="form-control" id="review-text" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="review-rating">Your Rating</label>
+                    <select class="form-control" id="review-rating" required>
+                        <option>★★★★★</option>
+                        <option>★★★★☆</option>
+                        <option>★★★☆☆</option>
+                        <option>★★☆☆☆</option>
+                        <option>★☆☆☆☆</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Review</button>
+            </form>
+        </div>
+    </div>
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 ConnectNITTe. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
